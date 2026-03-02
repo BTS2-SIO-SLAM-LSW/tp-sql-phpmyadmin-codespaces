@@ -1,24 +1,102 @@
 # TP SQL — MySQL + phpMyAdmin
 
-## 🚀 Utilisation avec GitHub Codespaces
+Dans ce TP, vous allez :
 
-1. Cliquer sur **Code → Codespaces → Create codespace on main**
-2. Attendre le chargement complet.
-3. Les conteneurs MySQL et phpMyAdmin démarrent automatiquement.
+-   Démarrer une base de données MySQL
+-   Lancer phpMyAdmin
+-   Accéder à phpMyAdmin via l'URL du Codespace
+-   Vous connecter à la base de données
 
-### 🔎 Accéder à phpMyAdmin
+------------------------------------------------------------------------
 
-1. Ouvrir l’onglet **Ports**.
-2. Repérer le port **8080**.
-3. Cliquer sur **Open in Browser**.
+# 1️⃣ Ouvrir le terminal
 
-L’URL sera de la forme :
+Dans votre Codespace :
 
-https://NOM_DU_CODESPACE-8080.app.github.dev
+👉 Menu **Terminal → New Terminal**
 
-⚠️ Ne PAS utiliser localhost dans Codespaces.
+------------------------------------------------------------------------
 
----
+# 2️⃣ Vérifier que vous êtes dans le bon dossier
+
+Tapez :
+
+``` bash
+pwd
+```
+
+Vous devez être dans :
+
+    /workspaces/tp-sql-phpmyadmin-codespaces
+
+Sinon :
+
+``` bash
+cd /workspaces/tp-sql-phpmyadmin-codespaces
+```
+
+------------------------------------------------------------------------
+
+# 3️⃣ Démarrer les conteneurs Docker
+
+Tapez :
+
+``` bash
+docker compose up -d
+```
+
+⏳ Attendez que les images se téléchargent (première fois seulement).
+
+------------------------------------------------------------------------
+
+# 4️⃣ Vérifier que les services fonctionnent
+
+Tapez :
+
+``` bash
+docker compose ps
+```
+
+Vous devez voir :
+
+-   mysql_db → Up\
+-   phpmyadmin → Up
+
+Si ce n'est pas le cas :
+
+``` bash
+docker compose logs
+```
+
+------------------------------------------------------------------------
+
+# 5️⃣ Accéder à phpMyAdmin
+
+## Méthode recommandée
+
+1.  Cliquez sur l'onglet **PORTS**
+2.  Repérez le port **8080**
+3.  Cliquez sur **Open in Browser**
+
+------------------------------------------------------------------------
+
+## Méthode via URL
+
+Si votre URL Codespace est du type :
+
+    https://urban-space-xylophone-jjwpwqg9g7753pvxr.github.dev
+
+Ajoutez :
+
+    -8080
+
+Ce qui donne une URL du type :
+
+    https://urban-space-xylophone-jjwpwqg9g7753pvxr-8080.github.dev
+
+⚠️ Toujours ajouter le numéro de port.
+
+------------------------------------------------------------------------
 
 ## 🔐 Identifiants
 
