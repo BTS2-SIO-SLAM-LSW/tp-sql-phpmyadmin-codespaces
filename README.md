@@ -9,15 +9,15 @@ Dans ce TP, vous allez :
 
 ------------------------------------------------------------------------
 
-# 1️⃣ Ouvrir le terminal
+# Ouvrir le terminal
 
 Dans votre Codespace :
 
-👉 Menu **Terminal → New Terminal**
+   Cliquer sur Menu **Terminal → New Terminal**
 
 ------------------------------------------------------------------------
 
-# 2️⃣ Vérifier que vous êtes dans le bon dossier
+# Vérifier que vous êtes dans le bon dossier
 
 Tapez :
 
@@ -37,7 +37,7 @@ cd /workspaces/tp-sql-phpmyadmin-codespaces
 
 ------------------------------------------------------------------------
 
-# 3️⃣ Démarrer les conteneurs Docker
+# Démarrer les conteneurs Docker
 
 Tapez :
 
@@ -49,7 +49,7 @@ docker compose up -d
 
 ------------------------------------------------------------------------
 
-# 4️⃣ Vérifier que les services fonctionnent
+# Vérifier que les services fonctionnent
 
 Tapez :
 
@@ -70,7 +70,7 @@ docker compose logs
 
 ------------------------------------------------------------------------
 
-# 5️⃣ Accéder à phpMyAdmin
+# 5Accéder à phpMyAdmin
 
 ## Méthode recommandée
 
@@ -98,7 +98,7 @@ Ce qui donne une URL du type :
 
 ------------------------------------------------------------------------
 
-## 🔐 Identifiants
+## Identifiants
 
 - Serveur : db
 - Utilisateur : root
@@ -107,7 +107,7 @@ Ce qui donne une URL du type :
 
 ---
 
-## 🖥️ Utilisation en local
+## Utilisation en local
 
 ```bash
 docker compose up -d
@@ -120,7 +120,7 @@ Accès : http://localhost:8080
 
 # TP SQL --- Étude de Cas : Gestion d'une Entreprise Informatique
 
-## 🎯 Contexte professionnel
+## Contexte professionnel
 
 Vous êtes développeur au sein d'une entreprise informatique nommée
 **TechDistrib**. L'entreprise vend des produits (ordinateurs,
